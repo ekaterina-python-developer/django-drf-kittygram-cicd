@@ -171,3 +171,4 @@ jobs:
           token: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           message: |
             ✅ Kittygram успешно задеплоен!
+
