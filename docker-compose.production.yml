@@ -8,7 +8,7 @@ services:
     image: postgres:13
     container_name: db
     env_file: 
-      - /home/yc-user/envs/kittygram.env
+      - /home/yc-user/envs/kittygram.env # Надо создайте файл .env из шаблона: cp .env.example .env. 
     volumes:
       - pg_data_production:/var/lib/postgresql/data
 
