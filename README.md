@@ -212,4 +212,4 @@ GitHub Actions (CI/CD)
 
 ## 👩‍💻 Разработчик
 
-[Екатерина Воронова](https://github.com/katya-voronova)
+[Екатерина Понурова](https://github.com/ekaterina-python-developer)
