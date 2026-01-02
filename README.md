@@ -66,15 +66,11 @@ docker-compose exec backend python manage.py migrate
 docker-compose exec backend python manage.py collectstatic --no-input
 ```
 
-### 5. Создание суперпользователя (опционально)
-
-## 📌 Примеры работы
-
-После успешного запуска проект доступен по адресу:
+### 5. После успешного запуска проект доступен по адресу:
 
 http://localhost:9000/
 
-
+## 📌 Примеры работы
 ## 🔌 API-примеры (Django REST API)
 
 Для работы с API требуется регистрация и аутентификация по токену.
@@ -85,6 +81,7 @@ http://localhost:9000/
 POST http://localhost:9000/api/users/
 
 Body:
+
 {
     "username": "demo_user",
     "password": "demo_password123"
@@ -97,10 +94,12 @@ Body:
 POST http://localhost:9000/api/token/login/
 
 Body:
+
 {
     "username": "demo_user",
     "password": "demo_password123"
 }
+
 
 Ответ:
 
@@ -180,6 +179,7 @@ cat ~/.ssh/github_actions.pub >> ~/.ssh/authorized_keys
 
 ### 4. Добавьте Secrets в вашем форке репозитория:
 
+```
 SERVER_HOST: IP вашего сервера
 SERVER_USER: имя пользователя на сервере
 SSH_KEY: содержимое ~/.ssh/github_actions с сервера
@@ -188,7 +188,7 @@ DOCKERHUB_USERNAME: ваш логин Docker Hub
 DOCKERHUB_TOKEN: ваш токен Docker Hub
 TELEGRAM_CHAT_ID: ваш личный ID пользователя в Telegram 
 TELEGRAM_BOT_TOKEN: ваш токен Telegram Bot
-
+```
 
 ### 5. Запуск деплоя
 
@@ -207,17 +207,11 @@ GitHub Actions автоматически:
 ## 🛠️ Используемые технологии
 
 Python 3.9, Django, Django REST Framework
-
 PostgreSQL
-
 React
-
 Nginx
-
 Docker, Docker Compose
-
 GitHub Actions (CI/CD)
-
 Yandex Cloud
 
 ---
