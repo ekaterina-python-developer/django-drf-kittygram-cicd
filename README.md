@@ -70,6 +70,7 @@ docker-compose exec backend python manage.py collectstatic --no-input
 
 http://localhost:9000/
 
+
 ## 🔌 API-примеры (Django REST API)
 
 Для работы с API требуется регистрация и аутентификация по токену.
